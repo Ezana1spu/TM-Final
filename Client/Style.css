@@ -1,0 +1,174 @@
+/* Style Reset */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  position: relative;
+  font-family: system-ui;
+  font-size: 62.5%; 
+  min-height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.6;
+  color: black;
+}
+
+h1{
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+.full-page {
+  width: 100%;
+  min-height:100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+}
+
+.small-box{
+  width: 70%;
+  min-height:540px;
+  background: #fff;
+  margin: 100px auto 20px;
+  margin-top: 30px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  min-width: 500px;
+  max-width: 800px;
+}
+
+.btn-box{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  margin-right:40px;
+}
+
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+  font-size: 20px;
+}
+
+
+h3{
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+
+.add-btn{
+  align-self: right;
+  border: none;
+  outline: none;
+  padding: 16px 40px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 40px;
+  padding-bottom: 20px;
+}
+
+.resultstwo{
+  display: flex;
+  justify-content: space-between;
+  flex: 100%;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.taskCheckbox{
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  display: flex;
+  align-items: center;
+  border-width: 10px;
+  color:#4e085f;
+  font-size: 17px;
+}
+
+input[type="checkbox"]{
+  cursor: pointer;
+}
+
+label{
+  margin-left: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.taskCheckbox.checked::before{
+  text-decoration: line-through;
+}
+
+.taskButton{
+  display: flex;
+  cursor: pointer;
+  margin-right: 80px;
+}
+
+.edit-btn{
+  flex: 1;
+  border-right: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: #ff5945;
+}
+
+.del-btn{
+  flex: 1;
+  border: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background: #ff5945;
+
+}
+  
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+.max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.preset {
+	font-family: "Courier New", monospace;
+	white-space: pre;
+}
+
