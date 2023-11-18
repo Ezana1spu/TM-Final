@@ -9,7 +9,6 @@ const input =  document.querySelector("#listitem");
 
 /* display list */
 function ShowList() {
-  const initialScrollPosition = window.scrollY;
 
   let output = "<ul>";
   for (const name of theList.task) {
@@ -36,7 +35,6 @@ function ShowList() {
   output += "</ul>";
   
   result.innerHTML = output;
-  window.scrollTo(0, initialScrollPosition);
 }
 
 //get list
